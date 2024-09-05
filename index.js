@@ -1,6 +1,7 @@
 const path = require("path")
 const express = require("express");
 const multer = require('multer')
+// const engine = require("express")
 
 const app = express()
 const PORT = 8000
@@ -35,10 +36,10 @@ app.post("/upload", upload.single("profileImage"), (req, res) => {
     return res.redirect("/")
 
 })
+  
 
 
 
 
 
-
-app.listen(PORT, () => console.log(`Server Started At PORT:8000`))
+app.listen(PORT, () => console.log(`Server Started At THIS PORT:8000`))
