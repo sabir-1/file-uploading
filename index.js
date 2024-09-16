@@ -15,8 +15,7 @@ const storage = multer.diskStorage({
         return cb(null, `${Date.now()}-${file.originalname}`)
     }
 })
-// const appe= express()
-// const caluter = clearTimeout
+ 
 
 //multer upload
 const upload = multer({ storage: storage })
