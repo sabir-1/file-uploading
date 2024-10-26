@@ -34,11 +34,11 @@ app.post("/upload", upload.single("profileImage"), (req, res) => {
     console.log(req.body)
     console.log(req.file)
     return res.redirect("/")
-})
+}) 
   
 
 
 
 
-//Local Host
+//Local Host 
 app.listen(PORT, () => console.log(`Server Started At THIS PORT:8000`))
